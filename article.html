@@ -1,5 +1,28 @@
-﻿---
-layout: default
----
+﻿<html>
 
-world
+{% include header.html %}
+
+<body>
+  <div id="top_bg">
+    <div class="box">
+
+      <!--#### logo ####-->  <!--#### 签名 ####-->  <!--#### 搜索框 ####-->
+      {% include logo.html %}
+
+      <!--#### 首页导航菜单 ####-->
+      {% include menu.html menu_index=1 %}
+
+    </div>
+  </div>
+
+  world
+  
+  <!--footer-->
+  {% include footer.html %}
+
+  <iframe id="tmp_downloadhelper_iframe" style="display: none;" width="800px"></iframe>
+  <div>
+        
+  </div>
+</body>
+</html>
