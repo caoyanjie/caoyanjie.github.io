@@ -6,6 +6,9 @@
   <div id="top_bg">
     <div class="box">
 
+      <!--#### logo ####-->  <!--#### 签名 ####-->  <!--#### 搜索框 ####-->
+      {% include logo.html %}
+
       <!--#### 首页导航菜单 ####-->
       {% include menu.html %}
 
@@ -13,13 +16,9 @@
   </div>
 
   {{ content }}
+  
+  <!--footer-->
+  {% include footer.html %}
 
-{% if page.va == 1 %}
-va == 1！！！！！！
-{% endif %}
-
-{% if page.va == 2 %}
-va == 2！！！！！！！！
-{% endif %}
 </body>
 </html>
