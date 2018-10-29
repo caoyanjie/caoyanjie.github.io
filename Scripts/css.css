@@ -32,7 +32,7 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 /***************网站首页CSS样式************/
 #top_bg { background: url(../Images/bg.gif) repeat-x top #ddd }
 .box { width: 990px; margin: 0px auto; }
-#logo_box { height: 70px; overflow: hidden; padding: 8px; }
+#logo_box { height: 70px; overflow: hidden; padding: 8px; z-index: 1000}
 #logo_img { height: 75px; width: 220px; overflow: hidden; float: left; text-align: left }
 #slogan { height: 75px; width: 220px; float: left; color: #fff; font-size: 14px; }
 #searche_box { height: 28px; width: 275px; float: right; overflow: hidden; padding-top: 25px }
