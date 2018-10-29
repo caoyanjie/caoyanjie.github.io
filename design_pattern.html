@@ -1,61 +1,14 @@
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>网页设计大作业</title>
-  <link src="Images/logo.icon" rel="shortcut icon">
-  <link href="Scripts/css.css" rel="stylesheet" type="text/css">
-  <script src="./Scripts/move_picture.js" type="text/javascript"></script>
-</head>
-<body>
-  <div id="top_bg">
-    <div class="box">
+---
+layout: default
+menu_index: 5
+---
 
-      <!--#### logo ####-->
-      <div id="logo_box">
-        <div id="logo_img">
-          <a href="./index.htm" title=""><img src="Images/logo.png" alt=""></a>
-        </div>
-
-        <!--#### 签名 ####-->
-        <div id="slogan">
-          <p>根本没有正确的选择，我们只有靠奋斗来使当初的选择显得正确。</p>
-          <p align="right">—— 一个有思考的程序员</p>
-        </div>
-
-        <!--#### 搜索框 ####-->
-        <div id="searche_box">
-          <form name="searchform" id="searchform" method="get" action="#" target="_blank">
-            <div style=" height:28px; width:240px; float:left; overflow:hidden">
-              <input type="text" id="input_blur" name="keyboard" value="" size="20">
-            </div>
-            <div style=" height:28px; width:34px; float:left; overflow:hidden">
-              <input src="./Images/ss3.gif" type="image" name="s" id="button" value="搜索" class="button_style">
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <!--##### 首页导航菜单 ######-->
-      <div id="menu">
-        <ul>
-          <li><a href="../index.htm" title="首页"><span>首页</span></a></li>
-          <li><a href="../blog/blog.htm">文章博客</a></li>
-          <li><a href="../fetion/fetion.htm">时代前沿</a></li>
-          <li><a href="../frame/frame.htm">Python</a></li>
-          <li><a href="./think.htm" class="selected">设计模式</a></li>
-          <li><a href="../play/play.htm">娱乐休闲</a></li>
-          <li><a href="../story/story.htm">深刻故事</a></li>
-          <li><a href="../movies/movie.htm">电影片段</a></li>
-        </ul><div class="clear"></div>   <!--清除浮动-->
-      </div>
-
-      <!--首页滚动图片-->
-	  <div>
-	    <p id="code_p">
+<div>
+	<p id="code_p">
         【装饰器模式】<br /><br />
         1. C++版<br /><br />
-        <div class="code_box">
-        <pre id="code_pre">
+    <div class="code_box">
+      <pre id="code_pre">
   #include <span class="quote">&lt;iostream&gt;</span>
   #include <span class="quote">&lt;string&gt;</span>
 
@@ -104,51 +57,7 @@
       ColorShape cc("红色", &c);
       std::cout << cc.str() << std::endl;
   }
-        </pre>
-      </div>
-        </p>
-      </div>
-
-  <!--友情链接-->
-  <div id="links_bg">
-    <div class="box">
-      <div id="links_box">
-        <div class="links_mc"><b>友情链接：</b></div>
-        <div class="links_mc"><a href="http://www.wangjie.org/" target="_blank" class="links_a" title="">DIV+CSS</a></div>
-        <div class="links_mc"><a href="http://http//www.yixieshi.com" target="_blank" class="links_a" title="">互联网的一些事</a></div>
-        <div class="links_mc"><a href="http://logozhizuowang.com/" target="_blank" class="links_a" title="">logo下载</a></div>
-        <div class="links_mc"><a href="http://www.uimaker.com/" target="_blank" class="links_a" title="">UI设计</a></div>
-        <div class="links_mc"><a href="http://www.52psxt.com/" target="_blank" class="links_a" title="">学习PS网站</a></div>
-        <div class="links_mc"><a href="http://www.33.la/" target="_blank" class="links_a" title="">桌面主题</a></div>
-        <div class="links_mc"><a href="http://www.51xflash.com/" target="_blank" class="links_a" title="">我要学flash网</a></div>
-        <div class="links_mc"><a href="http://www.logorc.com/" target="_blank" class="links_a" title="">logo设计</a></div>
-        <div class="links_mc"><a target="_blank" class="links_a" href="#" title="更多友 情链接">更多友情链接</a></div>
-        <div class="clear"></div>
-      </div>
+      </pre>
     </div>
-  </div>
-  
-  <!--footer-->
-  <div id="footer_bg">
-    <div class="box">
-      <div id="footer_nav">
-        <a href="#" title="关于实验" class="links_a">关于实验</a> | 
-        <a href="#" title="联系我们" class="links_a">联系本人</a> | 
-        <a href="#" title="加入我们" class="links_a">11级网工4班</a>
-      </div>
-      <div id="copyright_box">CopyRight © 2010-2013 曹延杰<br>
-        
-               
-        <script src="#" language="JavaScript"></script>
-        <script src="#" charset="utf-8" type="text/javascript"></script>
-        
-      </div>
-    </div>
-  </div>
-
-  <iframe id="tmp_downloadhelper_iframe" style="display: none;" width="800px"></iframe>
-  <div>
-        
-  </div>
-</body>
-</html>
+  </p>
+</div>
