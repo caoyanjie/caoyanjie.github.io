@@ -29,9 +29,10 @@ a.links_a:hover { text-decoration: none; color: #ffff00 }
 a.hongzi_a:link { color: #ff0000; text-decoration: none; font-weight: bold }
 a.hongzi_a:visited { text-decoration: none; color: #ff0000; font-weight: bold }
 a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
+
 /***************网站首页CSS样式************/
 
-/* title */
+/*************** title **************/
 /*#top_bg { background: url(../Images/bg.gif) repeat-x top #ddd; left: 0; right: 0; top: 0; position: fixed; z-index: 100; }*/
 #top_bg { left: 0; right: 0; top: 0; position: fixed; z-index: 100; }
 .box { width: 990px; margin: 0px auto; }
@@ -42,8 +43,9 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 #input_blur { height: 28px; line-height: 28px; color: #666; padding: 2px 5px; width: 240px; background: url(../Images/input_bg.gif) repeat-x; overflow: hidden }
 .button_style { width: 34px; height: 28px; line-height: 28px; overflow: hidden }
 
-/*菜单*/
-#menu { top: 129px; height: 34px; clear: both; font-size: 14px; font-weight: bold; text-align: center; padding-top: 8px; }
+/************** 菜单 **************/
+#content { top: 129px; }
+#menu { height: 34px; clear: both; font-size: 14px; font-weight: bold; text-align: center; padding-top: 8px; }
 #menu ul { width: 100%; }
 #menu ul li { width: 95px; text-align: center; float: left; line-height: 34px; background: url(../Images/muen_bg.gif) right no-repeat }
 /*#menu ul li a span { width: 95px; }   //###########################真没用。########################### */
