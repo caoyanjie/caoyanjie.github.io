@@ -100,7 +100,7 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 .gqtk_img { height: 65px; overflow: hidden }
 .gqtk_wz { height: 24px; overflow: hidden; text-align: left; font-weight: bold }
 #links_bg { background: #353535; border-bottom: 1px solid #4a4a4a; padding: 8px }
-#footer_bg { position: relative; background: #222; border-top: 1px solid #111 }
+#footer_bg { position: relative; top:129px; background: #222; border-top: 1px solid #111 }
 #links_box { padding: 8px; zoom: 1 }
 .links_mc { float: left; color: #c8c8c8; width: 85px; background: #313131; margin: 1px; overflow: hidden; padding: 0px 5px; }
 #footer_nav { height: 24px; padding-top: 10px; text-align: center; color: #d7ccba }
