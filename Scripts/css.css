@@ -44,7 +44,7 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 .button_style { width: 34px; height: 28px; line-height: 28px; overflow: hidden }
 
 /************** 菜单 **************/
-#content { position: relative; top: 500px; }
+#content { position: relative; top: 129px; }
 #menu { height: 34px; clear: both; font-size: 14px; font-weight: bold; text-align: center; padding-top: 8px; }
 #menu ul { width: 100%; }
 #menu ul li { width: 95px; text-align: center; float: left; line-height: 34px; background: url(../Images/muen_bg.gif) right no-repeat }
@@ -100,7 +100,7 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 .gqtk_img { height: 65px; overflow: hidden }
 .gqtk_wz { height: 24px; overflow: hidden; text-align: left; font-weight: bold }
 #links_bg { background: #353535; border-bottom: 1px solid #4a4a4a; padding: 8px }
-#footer_bg { background: #222; border-top: 1px solid #111 }
+#footer_bg { position: relative; background: #222; border-top: 1px solid #111 }
 #links_box { padding: 8px; zoom: 1 }
 .links_mc { float: left; color: #c8c8c8; width: 85px; background: #313131; margin: 1px; overflow: hidden; padding: 0px 5px; }
 #footer_nav { height: 24px; padding-top: 10px; text-align: center; color: #d7ccba }
