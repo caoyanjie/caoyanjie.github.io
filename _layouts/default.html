@@ -1,30 +1,20 @@
 <html>
 
-{% include head.html %}
+  <!-- head -->
+  {% include head.html %}
 
-<body>
-  <div id="top_bg">
-    <div id="logo_bg">
-      <div class="box">
-        <!--#### title: ####-->     <!--#### logo ####--> <!--#### 签名 ####--> <!--#### 搜索框 ####-->
-        {% include title.html %}
-      </div>
+  <body>
+    <!-- title -->
+    {% include title.htl %}
+
+    <!-- content -->
+    <div id="content">
+      {{ content }}
     </div>
-
-    <div id="menu_bg">
-      <div class="box">
-        <!--#### 首页导航菜单 ####-->
-        {% include menu.html %}
-      </div>
-    </div>
-  </div>
-
-  <div id="content">
-  {{ content }}
-  </div>
   
-  <!--footer-->
-  {% include footer.html %}
+    <!-- footer -->
+    {% include footer.html %}
 
-</body>
+  </body>
+  
 </html>
