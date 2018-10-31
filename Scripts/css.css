@@ -34,7 +34,7 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 
 /*************** title **************/
 /*#top_bg { background: url(../Images/bg.gif) repeat-x top #ddd; left: 0; right: 0; top: 0; position: fixed; z-index: 100; }*/
-#bg { width: 100vw; height: 100vh; position: fixed; z-index: -1; background-color: rgba(255, 255, 255, 0.5); }
+#bg { top: 0; width: 100vw; height: 100vh; position: fixed; z-index: -1; background-color: rgba(255, 255, 255, 0.5); }
 #top_bg { left: 0; right: 0; top: 0; position: fixed; z-index: 100; }
 #logo_bg { background-color: rgba(34, 34, 34, 0.9); }
 #menu_bg { background-color: rgba(129, 23, 9, 0.9); }
