@@ -110,6 +110,11 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 .links_mc { float: left; color: #c8c8c8; width: 85px; background: #313131; margin: 1px; overflow: hidden; padding: 0px 5px; }
 #footer_nav { height: 24px; padding-top: 10px; text-align: center; color: #d7ccba }
 #copyright_box { line-height: 22px; padding-bottom: 15px; font-size: 11px; font-family: Arial, Helvetica, sans-serif; color: #999; text-align: center }
+
+/*************** code ****************/
+#code { color: #fff; }
+#code p { color: #fff; }
+
 /*广告位CSS样式*/
 #ad1_box { padding: 10px; background: #fff; margin-top: 10px }
 #ad2_box { height: 80px; padding-top: 10px; overflow: hidden }
