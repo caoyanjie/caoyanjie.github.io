@@ -64,5 +64,29 @@ menu_index: 5
   }
 
 {% endhighlight %}
+
+    <p>
+      2. Python版<br />
+    </p>
+
+{% highlight python %}
+  def makebold(fn):
+      def wrapped():
+          return "<b>" + fn() + "</b>"
+      return wrapped
+
+  def makeitalic(fn):
+      def wrapped():
+          return "<i>" + fn() + "</i>"
+      return wrapped
+
+  @makebold
+  @makeitalic
+  def hello():
+      return "hello world"
+
+  print(hello()) ## returns <b><i>hello world</i></b>
+{% endhighlight %}
+
   </div>
 </div>
