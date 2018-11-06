@@ -111,9 +111,9 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 #footer_nav { height: 24px; padding-top: 10px; text-align: center; color: #d7ccba }
 #copyright_box { line-height: 22px; padding-bottom: 15px; font-size: 11px; font-family: Arial, Helvetica, sans-serif; color: #999; text-align: center }
 
-/*************** code ****************/
+/**************** code ****************/
 #code { color: #fff; }
-#code p { color: #fff; font-size: 14px; }
+#code p { color: #fff; font-size: 14px; text-indent: 4em; }
 
 /*广告位CSS样式*/
 #ad1_box { padding: 10px; background: #fff; margin-top: 10px }
