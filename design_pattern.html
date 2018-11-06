@@ -3,42 +3,34 @@ layout: default
 menu_index: 5
 ---
 
-{% highlight ruby %}
-  import os
-  filenames = os.listdir()
-  for filename in filenames:
-      print(filename)
-{% endhighlight %}
-
 <div class="box">
-	<p id="code_p">
         【装饰器模式】<br /><br />
         1. C++版<br /><br />
-    <div class="code_box">
-      <pre id="code_pre">
-  #include <span class="quote">&lt;iostream&gt;</span>
-  #include <span class="quote">&lt;string&gt;</span>
 
-  <span class="comment">// 形状</span>
+      {% highlight c++ %}
+  #include &lt;iostream&gt;
+  #include &lt;string&gt;
+
+  // 形状
   struct Shape
   {
       virtual std::string str() = 0;
   };
 
-  <span class="comment">// 圆</span>
+  // 圆
   struct Circle : Shape
   {
-      <span class="comment">// 重载基类虚函数</span>
+      // 重载基类虚函数
       std::string str() override
       {
-          <span class="keyword">return</span> std::string("圆的半径为：") + std::to_string(m_radius);
+          return std::string("圆的半径为：") + std::to_string(m_radius);
       }
 
-  <span class="keyword">private</span>:
-      <span class="keyword">float</span> m_radius = 10.0f;
+  private:
+      float m_radius = 10.0f;
   };
 
-  <span class="comment">// 形状颜色</span>
+  // 形状颜色
   struct ColorShape : Shape
   {
       ColorShape(std::string color, Shape* shape)
@@ -47,24 +39,22 @@ menu_index: 5
           m_shape = shape;
       }
 
-      <span class="comment">// 重载基类虚函数</span>
+      // 重载基类虚函数
       std::string str() override
       {
-          <span class="keyword">return</span> m_shape->str() + std::string(" 颜色为：") + m_color;
+          return m_shape->str() + std::string(" 颜色为：") + m_color;
       }
 
-  <span class="keyword">private</span>:
+  private:
       std::string    m_color;
       Shape*         m_shape;
   };
 
-  <span class="keyword">int</span> main()
+  int main()
   {
       Circle c;
       ColorShape cc("红色", &c);
       std::cout << cc.str() << std::endl;
   }
-      </pre>
-    </div>
-  </p>
+    {% endhighlight %}
 </div>
