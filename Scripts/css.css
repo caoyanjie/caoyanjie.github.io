@@ -113,7 +113,7 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 
 /*************** code ****************/
 #code { color: #fff; }
-#code p { color: #fff; }
+#code p { color: #fff; font-size: 14px; }
 
 /*广告位CSS样式*/
 #ad1_box { padding: 10px; background: #fff; margin-top: 10px }
