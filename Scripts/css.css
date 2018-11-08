@@ -29,7 +29,7 @@ a.links_a:hover { text-decoration: none; color: #ffff00 }
 a.hongzi_a:link { color: #ff0000; text-decoration: none; font-weight: bold }
 a.hongzi_a:visited { text-decoration: none; color: #ff0000; font-weight: bold }
 a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
-
+pre { white-space: pre-wrap; word-wrap: break-word; }
 /***************网站首页CSS样式************/
 
 /*************** title **************/
