@@ -33,7 +33,7 @@ function addBtn()
 	}
 	var btnBox = document.createElement('div');
 	btnBox.setAttribute('id','ibanner_btn');
-	var SpanBox ='';
+	var SpanBox = '';
 	for(var i=1; i<=picList.length; i++ )
 	{
 		var spanList = '<span class="normal">'+i+'</span>';
@@ -44,8 +44,8 @@ function addBtn()
 	$('ibanner_btn').getElementsByTagName('span')[0].className = 'current';
 	for (var m=0; m<picList.length; m++)
 	{
-		var attributeValue = 'picLi_'+m
-		picList[m].setAttribute('id',attributeValue);
+		var attributeValue = 'picLi_' + m
+		picList[m].setAttribute('id', attributeValue);
 	}
 }
 
