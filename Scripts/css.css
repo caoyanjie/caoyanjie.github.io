@@ -269,8 +269,10 @@ dd.digg_pic samp { cursor: pointer; }
 #down_a a { width: 99px; height: 26px; background: url(../Images/downs.gif) no-repeat; text-indent: -9999px; display: block; }
 .index_ztbox { padding: 6px; }
 .index_ztbox a { padding-left: 5px; }
-/**20111007新加CSS样式**/
-.hd_pic { border: 1px solid #ccc; padding: 8px 12px; background: #f8f8f8; margin-bottom: 10px; }
+
+/**首页开心一刻**/
+/*.hd_pic { border: 1px solid #ccc; padding: 8px 12px; background: #f8f8f8; margin-bottom: 10px; }*/
+.hd_pic { border: 1px solid #ccc; padding: 8px 12px; background: rgba(255, 255, 255, 0.5); margin-bottom: 10px; }
 .hd_box { height: 390px; padding-top: 15px; overflow: hidden }
 .hd_box a:active { test: expression(target="_blank"); }
 .hd_box li { width: 208px; height: 200px; float: left; overflow: hidden; padding: 0px 15px }
@@ -278,6 +280,7 @@ dd.digg_pic samp { cursor: pointer; }
 .hd_box a:hover img { padding: 3px; border: #60a70c 1px solid; }
 .hd_box p { height: 20px; line-height: 20px; text-align: center }
 .box2 { width: 990px; margin: 0px auto; align: center; }
+
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin:20px 0 20px 100px; }*/
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin-top:20px ; 0 margin-left: auto; margin-left: auto; }*/
 #ibanner { position:relative; width:650px; height:400px; overflow:hidden; margin-top:20px ; margin-left: auto; margin-right: auto; }
