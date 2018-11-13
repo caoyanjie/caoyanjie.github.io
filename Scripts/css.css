@@ -276,11 +276,12 @@ dd.digg_pic samp { cursor: pointer; }
 .hd_box { height: 390px; padding-top: 15px; overflow: hidden }
 .hd_box a:active { test: expression(target="_blank"); }
 .hd_box li { width: 208px; height: 200px; float: left; overflow: hidden; padding: 0px 15px }
-.hd_video_box li { width: 450px; height: 252px; float: left; overflow: hidden; padding: 0px 15px }
 .hd_box img { width: 200px; height: 135px; padding: 3px; border: #ddd 1px solid; }
 .hd_box a:hover img { padding: 3px; border: #60a70c 1px solid; }
 .hd_box p { height: 20px; line-height: 20px; text-align: center; color: white; }
 .box2 { width: 990px; margin: 0px auto; align: center; }
+.hd_video_box { height: 390px; padding-top: 15px; overflow: hidden }
+.hd_video_box li { width: 424px; height: 162px; float: left; overflow: hidden; padding: 0px 15px }
 
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin:20px 0 20px 100px; }*/
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin-top:20px ; 0 margin-left: auto; margin-left: auto; }*/
