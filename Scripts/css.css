@@ -62,9 +62,6 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 .content_box { padding-bottom: 10px; }   /*############ height没用 #########*/
 .content_left { width: 264px; border: 1px solid #ccc; padding: 8px 12px; background: #f8f8f8; float: left }
 .content_right { width: 404px; border: 1px solid #ccc; padding: 8px 12px; background: #f8f8f8; float: right }
-.part_title { height: 30px; padding: 0px 5px; line-height: 30px; /*background: url(../Images/nav_bg1.gif) repeat-x bottom*/}  /*############ 标题下白线#########*/
-.part_title h3 { font-size: 14px; }
-.part_title a { padding-left: 5px; }
 .more { font-size: 12px; float: right; }
 .home_nav { height: 258px; background: url(../Images/nav_bg2.gif); padding: 0px 5px; overflow: hidden; line-height: 24px }  /*###########字体阴影############*/
 .news_show1 { padding-top: 10px; height: 89px; overflow: hidden }
@@ -271,6 +268,9 @@ dd.digg_pic samp { cursor: pointer; }
 .index_ztbox a { padding-left: 5px; }
 
 /**首页开心一刻**/
+.part_title { height: 30px; padding: 0px 5px; line-height: 30px; /*background: url(../Images/nav_bg1.gif) repeat-x bottom*/}  /*############ 标题下白线#########*/
+.part_title h3 { font-size: 14px; }
+.part_title a { padding-left: 5px; }
 /*.hd_pic { border: 1px solid #ccc; padding: 8px 12px; background: #f8f8f8; margin-bottom: 10px; }*/
 .hd_pic { border: 1px solid #ccc; padding: 8px 12px; background: rgba(0, 0, 0, 0.4); margin-bottom: 10px; }
 .hd_box { height: 390px; padding-top: 15px; overflow: hidden }
