@@ -192,27 +192,27 @@ div[class="highlight"] > pre > code[class*="language-"] {
 }
 */
 div[class="highlight"] > pre > code[class*="language-"] {
-  background:#282c35;
+  background:#282c34;
 }
 div[class="highlight"] > pre {
-  background:#282c35;
+  background:#282c34;
 }
 figure[class="highlight"] > pre > code[class*="language-"] {
   text-align:left;
-  background:#282c35;
+  background:#282c34;
 }
 figure[class="highlight"] > pre > code[class*="language-"] td > pre{
   text-align:left;
-  background:#282c35;
+  background:#282c34;
 }
 figure[class="highlight"] > pre {
   text-align:left;
-  background:#282c35;
-  font-size: 17px;
+  background:#282c34;
+  font-size: 16px;
 }
 div[class="highlighter-rouge"] > pre[class="highlight"] > code{
-  background:#282c35;
+  background:#282c34;
 }
 div[class="highlighter-rouge"] > pre[class="highlight"] {
-  background:#282c35;
+  background:#282c34;
 }
