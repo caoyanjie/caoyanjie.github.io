@@ -187,26 +187,26 @@
 }
 
 div[class="highlight"] > pre > code[class*="language-"] {
-  background:#474949;
+  background:#282c35;
 }
 div[class="highlight"] > pre {
-  background:#474949;
+  background:#282c35;
 }
 figure[class="highlight"] > pre > code[class*="language-"] {
   text-align:left;
-  background:#474949;
+  background:#282c35;
 }
 figure[class="highlight"] > pre > code[class*="language-"] td > pre{
   text-align:left;
-  background:#474949;
+  background:#282c35;
 }
 figure[class="highlight"] > pre {
   text-align:left;
-  background:#474949;
+  background:#282c35;
 }
 div[class="highlighter-rouge"] > pre[class="highlight"] > code{
-  background:#474949;
+  background:#282c35;
 }
 div[class="highlighter-rouge"] > pre[class="highlight"] {
-  background:#474949;
+  background:#282c35;
 }
