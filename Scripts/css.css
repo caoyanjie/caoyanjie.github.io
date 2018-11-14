@@ -280,11 +280,15 @@ dd.digg_pic samp { cursor: pointer; }
 .hd_box a:hover img { padding: 3px; border: #60a70c 1px solid; }
 .hd_box p { height: 20px; line-height: 20px; text-align: center; color: white; }
 .box2 { width: 990px; margin: 0px auto; align: center; }
+
 .hd_video_box { height: 390px; padding-top: 15px; overflow: hidden }
 .hd_video_box li { width: 434px; height: 270px; float: left; overflow: hidden; padding: 0px 15px }
+.hd_video_box video { width: 426px; height: 242px; padding: 0px; border: #ddd 1px solid; }
 .hd_video_box p { height: 20px; line-height: 20px; text-align: center; color: white; }
+
 .hd_joke_video_box { height: 390px; padding-top: 15px; overflow: hidden }
-.hd_joke_video_box li { width: 340px; height: 280px; float: left; overflow: hidden; padding: 0px 15px }
+.hd_joke_video_box li { width: 342px; height: 280px; float: left; overflow: hidden; padding: 0px 15px }
+.hd_joke_video_box video { width: 342px; height: 257px; padding: 0px; border: #ddd 1px solid; }
 .hd_joke_video_box p { height: 20px; line-height: 20px; text-align: center; color: white; }
 
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin:20px 0 20px 100px; }*/
