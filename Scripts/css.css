@@ -289,9 +289,9 @@ dd.digg_pic samp { cursor: pointer; }
 
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin:20px 0 20px 100px; }*/
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin-top:20px ; 0 margin-left: auto; margin-left: auto; }*/
-#ibanner { position:relative; width:680px; height:383px; overflow:hidden; margin-top:20px ; margin-left: auto; margin-right: auto; }
+#ibanner { position:relative; width:650px; height:366px; overflow:hidden; margin-top:20px ; margin-left: auto; margin-right: auto; }
 #ibanner_pic {}
-#ibanner_pic a { position:absolute; top:0; display:block; width:680px; height:383px; overflow:hidden; }
+#ibanner_pic a { position:absolute; top:0; display:block; width:650px; height:366px; overflow:hidden; }
 
 fieldset, img { border:none; }
 legend { display:none; }
