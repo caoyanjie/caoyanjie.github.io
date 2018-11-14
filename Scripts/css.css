@@ -281,7 +281,7 @@ dd.digg_pic samp { cursor: pointer; }
 .hd_box p { height: 20px; line-height: 20px; text-align: center; color: white; }
 .box2 { width: 990px; margin: 0px auto; align: center; }
 .hd_video_box { height: 390px; padding-top: 15px; overflow: hidden }
-.hd_video_box li { width: 434px; height: 250px; float: left; overflow: hidden; padding: 0px 15px }
+.hd_video_box li { width: 434px; height: 270px; float: left; overflow: hidden; padding: 0px 15px }
 .hd_video_box p { height: 20px; line-height: 20px; text-align: center; color: white; }
 .hd_joke_video_box { height: 390px; padding-top: 15px; overflow: hidden }
 .hd_joke_video_box li { width: 340px; height: 280px; float: left; overflow: hidden; padding: 0px 15px }
