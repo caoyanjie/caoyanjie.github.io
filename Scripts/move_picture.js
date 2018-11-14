@@ -158,7 +158,7 @@ function iBanner()
 			picList[z].style.zIndex='3';
 			if (currentNum!=z)
 			{
-				picList[z].style.left='800px';
+				picList[z].style.left='700px';
 				moveElement('picLi_'+z,0,0,10);
 			}
 		}
@@ -193,7 +193,7 @@ function autoBanner()
 		btnList[0].className='current';
 		picList[currentNum].style.zIndex='2';
 		picList[0].style.zIndex='3';
-		picList[0].style.left='800px';
+		picList[0].style.left='700px';
 		moveElement('picLi_0',0,0,10);
 	}
 	else
@@ -204,7 +204,7 @@ function autoBanner()
 		btnList[nextNum].className='current';
 		picList[currentNum].style.zIndex='2';
 		picList[nextNum].style.zIndex='3';
-		picList[nextNum].style.left='800px';
+		picList[nextNum].style.left='700px';
 		moveElement('picLi_'+nextNum,0,0,10);
 	}
 }
