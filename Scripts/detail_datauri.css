@@ -24,7 +24,7 @@ a:hover{color:#365000;}
 .mod-diary-nav{position:absolute;left:-27px;top:120px;width:955px;height:71px;background:url(../Images/nav.png?v=ba3f210a.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="../Images/nav.png?v=ba3f210a.png");}
 .mod-diary-clip{position:absolute;right:-21px;top:10px;width:23px;height:256px;background:url(../Images/clip.png?v=95220824.png) no-repeat;}
 /*.mod-topspaceinfo h1{position:absolute;left:0;top:27px;width:940px;height:90px;overflow:hidden;font-size:30px;line-height:90px;font-weight:normal;text-align:center;}*/
-.article_title{position:absolute;left:0;top:27px;width:940px;height:90px;overflow:hidden;font-size:30px;line-height:90px;font-weight:normal;text-align:center;}
+.article_title{position:absolute;left:0;top:27px;width:940px;height:90px;overflow:hidden;font-size:30px;line-height:90px;font-weight:normal;text-align:center; color:#8cab4e; }
 .mod-topspaceinfo .space-name{color:#8cab4e;}.mod-topspaceinfo .space-description{position:absolute;margin-top:0;left:118px;top:137px;width:770px;height:36px;overflow:hidden;font-size:12px;line-height:18px;color:#fff;font-family:Tahoma, Arial, Helvetica, STHeiti;}
 .mod-topspaceinfo{overflow:hidden;}
 .mod-topspaceinfo .head-topbar{display:none;}
