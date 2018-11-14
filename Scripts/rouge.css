@@ -208,7 +208,6 @@ figure[class="highlight"] > pre > code[class*="language-"] td > pre{
 figure[class="highlight"] > pre {
   text-align:left;
   background:#282c35;
-  font-size: 16px;
 }
 div[class="highlighter-rouge"] > pre[class="highlight"] > code{
   background:#282c35;
