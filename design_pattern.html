@@ -5,12 +5,11 @@ menu_index: 5
 
 <div class="box">
   <div id="code">
-    <p>
-      【装饰器模式】<br /><br />
-    </p>
-    <p>
-      1. C++版<br />
-    </p>
+    <p>【装饰器模式】</p>
+    <br /><br />
+
+    <p>1. C++版</p>
+    <br />
 
 {% highlight c++ %}
 
@@ -60,7 +59,7 @@ menu_index: 5
   {
       Circle c;
       ColorShape cc("红色", &c);
-      std::cout << cc.str() << std::endl;
+      std::cout << cc.str() << std::endl;   // 结果为：
   }
 
 {% endhighlight %}
@@ -70,22 +69,25 @@ menu_index: 5
     </p>
 
 {% highlight python %}
+  // 加粗
   def makebold(fn):
       def wrapped():
           return "<b>" + fn() + "</b>"
       return wrapped
 
+  # 加斜
   def makeitalic(fn):
       def wrapped():
           return "<i>" + fn() + "</i>"
       return wrapped
 
+  # 加斜再加粗
   @makebold
   @makeitalic
   def hello():
       return "hello world"
 
-  print(hello()) ## returns <b><i>hello world</i></b>
+  print(hello())   # 结果为： <b><i>hello world</i></b>
 {% endhighlight %}
 
   </div>
