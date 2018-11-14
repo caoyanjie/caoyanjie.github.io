@@ -283,6 +283,9 @@ dd.digg_pic samp { cursor: pointer; }
 .hd_video_box { height: 390px; padding-top: 15px; overflow: hidden }
 .hd_video_box li { width: 434px; height: 200px; float: left; overflow: hidden; padding: 0px 15px }
 .hd_video_box p { height: 20px; line-height: 20px; text-align: center; color: white; }
+.hd_joke_video_box { height: 390px; padding-top: 15px; overflow: hidden }
+.hd_joke_video_box li { width: 520px; height: 390px; float: left; overflow: hidden; padding: 0px 15px }
+.hd_joke_video_box p { height: 20px; line-height: 20px; text-align: center; color: white; }
 
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin:20px 0 20px 100px; }*/
 /*#ibanner { position:relative; width:680px; height:300px; overflow:hidden; margin-top:20px ; 0 margin-left: auto; margin-left: auto; }*/
