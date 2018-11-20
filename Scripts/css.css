@@ -112,8 +112,8 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 .article_content { font-size: 16px; }
 
 /**************** code ****************/
-#code { color: #fff; }
-#code p { color: #fff; font-size: 14px; text-indent: 3em; }
+.code { color: #fff; }
+.code p { color: #fff; font-size: 14px; text-indent: 3em; }
 
 /*广告位CSS样式*/
 #ad1_box { padding: 10px; background: #fff; margin-top: 10px }
