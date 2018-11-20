@@ -7,7 +7,7 @@ menu_index: 3
   <div class="code">
     <p>【C++11多线程】</p>
     <p>标签： std::thread std::mutex std::atomic std::conditional_varible</p>
-    <p>我们对比单线程和多线程的时间性能:</p>
+    <p>我们对比单线程和多线程的时间性能：</p>
     <p>我们用 Sleep(5000) 函数让程序休眠 5 秒用来模拟函数执行了一系列耗时的操作</p>
     {% highlight c++ %}
   #include <iostream>
@@ -29,7 +29,7 @@ menu_index: 3
       std::cout << "func2() 执行完毕！" << std::endl;
   }
     {% endhighlight %}
-    <p>接下来我们分别用 单线程 和 多线程 来调用这两个函数，对比执行的时间</p>
+    <p>接下来我们分别用 单线程 和 多线程 来调用这两个函数，对比执行的时间：</p>
     <p>1.单线程串行执行</p>
     {% highlight c++ %}
   int main(void)
@@ -73,6 +73,14 @@ menu_index: 3
       return;
   }
     {% endhighlight %}
+
+    <p>可以看到用单线程执行 func1() 和 func2() 共耗时 10 秒，是 func1() 和 func2() 单独执行的时间总和，而用多线程执行万2个函数总共耗时 5 秒，因为他们是并行同时执行的，并不是 func1() 执行完才执行 func2() 而是 func1() 和 func2() 同时执行的</p>
+
+    <br />
+    <hr>
+    <br />
+
+    <p>上面我们假设 func1()
   </div>
     }
 </div>
