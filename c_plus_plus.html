@@ -2,3 +2,77 @@
 layout: default
 menu_index: 3
 ---
+
+<div class="box">
+  <div class="code">
+    <p>【C++11多线程】</p>
+    <p>标签： std::thread std::mutex std::atomic std::conditional_varible</p>
+    <p>我们对比单线程和多线程的时间性能:</p>
+    <p>我们用Sleep(5000)函数让程序休眠5秒用来模拟函数执行了一系列耗时的操作</p>
+    {% highlight c++ %}
+  #include <iostream>
+  #include <thread>
+  #include <time.h>
+  #include <Windows.h>
+
+  void func1()
+  {
+      std::cout << "\n开始执行 func1()......" << std::endl;
+      Sleep(5000);
+      std::cout << "func1() 执行完毕！" << std::endl;
+  }
+
+  void func2()
+  {
+      std::cout << "\n开始执行 func2()......" << std::endl;
+      Sleep(5000);
+      std::cout << "func2() 执行完毕！" << std::endl;
+  }
+    {% endhighlight %}
+    <p>接下来我们分别用单线程和多线程来调用这两个函数，看执行的时间</p>
+    <p>1.单线程</p>
+    {% highlight c++ %}
+  int main(void)
+  {
+      // 开始计时
+      time_t _start, _end;
+      _start = clock();
+
+      // 单线程串行执行
+      func1();
+      func2();
+
+      // 结束计时，查看结果
+      _end = clock();
+      std::cout << "\n用时 " << (_end - _start) / 1000 << "秒" << std::endl;
+
+      system("pause");
+      return;
+  }
+    {% endhighlight %}
+
+    <p>2.多线程</p>
+    {% highlight c++ %}
+  int main(void)
+  {
+      // 开始计时
+      time_t _start, _end;
+      _start = clock();
+
+      // 多线程并行执行
+      std::thread _subThread1(func1);
+      std::thread _subThread2(func2);
+      _subThread1.detach();
+      _subThread2.join();
+
+      // 结束计时，查看结果
+      _end = clock();
+      std::cout << "\n用时 " << (_end - _start) / 1000 << "秒" << std::endl;
+
+      system("pause");
+      return;
+  }
+    {% endhighlight %}
+  </div>
+    }
+</div>
