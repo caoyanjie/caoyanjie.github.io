@@ -29,7 +29,9 @@ menu_index: 3
       std::cout << "func2() 执行完毕！" << std::endl;
   }
     {% endhighlight %}
-    <p>接下来我们分别用 单线程 和 多线程 来调用这两个函数，对比执行的时间：</p>
+    <p>
+    	接下来我们分别用 单线程 和 多线程 来调用这两个函数，对比执行的时间：
+	</p>
     <p>1.单线程串行执行</p>
     {% highlight c++ %}
   int main(void)
@@ -74,13 +76,69 @@ menu_index: 3
   }
     {% endhighlight %}
 
-    <p>可以看到用单线程执行 func1() 和 func2() 共耗时 10 秒，是 func1() 和 func2() 单独执行的时间总和，而用多线程执行万2个函数总共耗时 5 秒，因为他们是并行同时执行的，并不是 func1() 执行完才执行 func2() 而是 func1() 和 func2() 同时执行的</p>
+    <p>
+    	可以看到用单线程执行 func1() 和 func2() 共耗时 10 秒，是 func1() 和 func2() 单独执行的时间总和，而用多线程执行万2个函数总共耗时 5 秒，因为他们是并行同时执行的，并不是 func1() 执行完才执行 func2() 而是 func1() 和 func2() 同时执行的
+    </p>
 
     <br />
     <hr>
     <br />
 
-    <p>上面我们假设 func1() 和 func2() 是毫无关系的两个独立逻辑的函数，如果我们的两个函数要进行共享数据，就不能像单线程一样随意对共有变量进行赋值，因为2个线程同时对一块hui'dao'zhi内存进行写入
+    <p>
+    	上面我们假设 func1() 和 func2() 是毫无关系的两个独立逻辑的函数，如果我们的两个函数要进行共享数据，就不能像单线程一样随意对共有变量进行赋值，因为2个线程同时对一块内存进行写入程序就会崩溃，此时就要用到锁:std::mutex
+    </p>
+    {% highlight c++ %}
+  #include <iostream>
+  #include <thread>
+  #include <queue>
+  #include <mutex>
+
+  // 共享队列
+  std::queue<unsiged long long> s_shareData;
+
+  // 全局锁
+  std::mutex s_lock;
+
+  // 生产者
+  void makeData()
+  {
+      unsighed long long _value = 0;
+      while (true)
+      {
+          s_lock.lock();
+          s_shareData.push(_value);
+          s_lock.unlock();
+          _value++;
+      }
+  }
+
+  // 消费者
+  void useData()
+  {
+      while (true)
+      {
+          s_lock.lock();
+          if (!s_shareData.empty())
+          {
+              unsiged long long _value = s_shareData.front();
+              s_shareData.pop();
+              s_lock.unlock();
+              std::cout << "data: " << _value << std::endl;
+              continue;
+          }
+          s_lock.unlock();
+      }
+  }
+
+  // 
+  void main(void)
+  {
+      std::thread s1(makeData);
+      s1.detach();
+
+      useData();
+  }
+    {% endhighlight %}
   </div>
     }
 </div>
