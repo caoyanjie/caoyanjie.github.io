@@ -140,6 +140,72 @@ menu_index: 3
       return 0;
   }
     {% endhighlight %}
+
+
+    <br />
+    <hr>
+    <br />
+
+    <p>
+      假设你正乘坐通宵列车旅行。一个可以确保你在正确的车站下车的方法就是整夜保持清醒并注意火车停靠的地方。你不会误站，但你到那儿时就会觉得很累。或者，你可以查一下时间表，了解火车会在何时到达，将闹钟定的稍微提前一点，然后去睡觉。这是可以的；你不会错过站，但是如果火车晚点了，你就会醒的太早。也有可能闹钟的电池没电了，你就会睡过头以至于错过站。理想的状况是，你只管去睡觉，让某个人或某个东西在火车到站时叫醒你，无论何时。
+      上面我们就用了最笨的第一种方法，在while(true)里不停的访问共享队列查看是否有数据，如果有就取出，如果没有就继续查看，这种方法的弊端是如果长时间没有数据，消费者就会不停的访问空队列，极大的浪费CPU，下面我们用std::conditional_varble让消费者在没有数据的时候休眠线程，让CPU去处理别的事情，当有数据时主动唤醒线程去取数据
+    </p>
+    {% highlight c++ %}
+  #include <iostream>
+  #include <thread>
+  #include <queue>
+  #include <mutex>
+  #include <conditional_varible>
+
+  std::queue<unsigned long long>    s_shareData;    // 共享队列
+  std::mutex                        s_lock;         // 全局锁
+  std::conditional_varible          s_conditional   // 唤醒条件
+
+  // 生产者
+  void makeData()
+  {
+      unsigned long long _value = 0;
+      while (true)
+      {
+      	  if (_value % 1000 == 0)                  // 隔一千个数生产一个数据
+      	  {
+      	      s_lock.lock();                       // 加锁
+              s_shareData.push(_value);            // 存数据
+              s_lock.unlock();                     // 解锁
+              s_conditional.notify_one();          // 唤醒休眠的线程通知去取数据
+              _value++;
+      	  }
+          
+      }
+  }
+
+  // 消费者
+  void useData()
+  {
+      while (true)
+      {
+          std::unique_lock<std::mutex> _lock(s_lock);                  // 加锁
+          s_conditional.wait([](){ return !s_shareData.empty(); });    // 如果队列为空(lambda函数返回false)线程就休眠到这一行不往下执行，知道收到唤醒通知
+          unsigned long long _value = s_shareData.front();             // 取数据
+          s_shareData.pop();
+          _lock.unlock();                                              // 解锁
+          std::cout << "data: " << _value << std::endl;
+      }
+  }
+
+  // 使用
+  int main(void)
+  {
+      // 生产者线程
+      std::thread s1(makeData);
+      s1.detach();
+
+      // 消费者线程(主线程)
+      useData();
+
+      return 0;
+  }
+    {% endhighlight %}
+
   </div>
-    }
 </div>
