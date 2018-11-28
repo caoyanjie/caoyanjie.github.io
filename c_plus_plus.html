@@ -167,12 +167,12 @@ menu_index: 3
       unsigned long long _value = 0;
       while (true)
       {
-      	  if (_value % 100000000 == 0)             // 隔一亿个数生产一个数据(因为C++太快，在我的机器上不到一秒产生一个数据)
+      	  if (_value % 100000000 == 0)       // 隔一亿个数生产一个数据(因为C++太快，在我的机器上不到一秒产生一个数据)
       	  {
-      	      s_lock.lock();                       // 加锁
-              s_shareData.push(_value);            // 存数据
-              s_lock.unlock();                     // 解锁
-              s_conditional.notify_one();          // 唤醒休眠的线程通知去取数据
+      	      s_lock.lock();                 // 加锁
+              s_shareData.push(_value);      // 存数据
+              s_lock.unlock();               // 解锁
+              s_conditional.notify_one();    // 唤醒休眠的线程通知去取数据
       	  }
           _value++;
       }
