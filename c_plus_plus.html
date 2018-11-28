@@ -94,7 +94,7 @@ menu_index: 3
   #include <mutex>
 
   std::queue<unsigned long long> s_shareData;    // 共享队列
-  std::mutex s_lock;                            // 全局锁
+  std::mutex s_lock;                             // 全局锁
 
   // 生产者
   void makeData()
@@ -102,9 +102,9 @@ menu_index: 3
       unsigned long long _value = 0;
       while (true)
       {
-          s_lock.lock();				// 加锁
-          s_shareData.push(_value);		// 存数据
-          s_lock.unlock();				// 解锁
+          s_lock.lock();                // 加锁
+          s_shareData.push(_value);     // 存数据
+          s_lock.unlock();              // 解锁
           _value++;
       }
   }
@@ -114,12 +114,12 @@ menu_index: 3
   {
       while (true)
       {
-          s_lock.lock();                                         // 加锁
+          s_lock.lock();                                          // 加锁
           if (!s_shareData.empty())
           {
               unsigned long long _value = s_shareData.front();    // 取数据
               s_shareData.pop();
-              s_lock.unlock();                                   // 解锁
+              s_lock.unlock();                                    // 解锁
               std::cout << "data: " << _value << std::endl;
               continue;
           }
