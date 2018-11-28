@@ -114,12 +114,12 @@ menu_index: 3
   {
       while (true)
       {
-          s_lock.lock();
+          s_lock.lock();                                         // 加锁
           if (!s_shareData.empty())
           {
-              unsiged long long _value = s_shareData.front();
+              unsiged long long _value = s_shareData.front();    // 取数据
               s_shareData.pop();
-              s_lock.unlock();
+              s_lock.unlock();                                   // 解锁
               std::cout << "data: " << _value << std::endl;
               continue;
           }
