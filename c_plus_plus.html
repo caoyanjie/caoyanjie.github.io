@@ -130,13 +130,17 @@ menu_index: 3
       }
   }
 
-  // 
-  void main(void)
+  // 使用
+  int main(void)
   {
+  	  // 生产者线程
       std::thread s1(makeData);
       s1.detach();
 
+      // 消费者线程(主线程)
       useData();
+
+      return 0;
   }
     {% endhighlight %}
   </div>
