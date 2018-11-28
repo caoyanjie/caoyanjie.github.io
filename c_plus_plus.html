@@ -185,8 +185,8 @@ menu_index: 3
       {
           std::unique_lock<std::mutex> _lock(s_lock);                         // 加锁
           s_conditional.wait(_lock, [](){ return !s_shareData.empty(); });    // 如果队列为空(lambda函数返回false)
-                                                                                 线程就休眠到这一行不往下执行，
-                                                                                 直到收到唤醒通知
+                                                                              // 线程就休眠到这一行不往下执行，
+                                                                              // 直到收到唤醒通知
           unsigned long long _value = s_shareData.front();                    // 取数据
           s_shareData.pop();
           _lock.unlock();                                                     // 解锁
