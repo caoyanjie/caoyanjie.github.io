@@ -275,7 +275,8 @@ dd.digg_pic samp { cursor: pointer; }
 .part_title h3 { font-size: 14px; }
 .part_title a { padding-left: 5px; }
 /*.hd_pic { border: 1px solid #ccc; padding: 8px 12px; background: #f8f8f8; margin-bottom: 10px; }*/
-.hd_pic { border: 1px solid #ccc; padding: 8px 12px; background: rgba(0, 0, 0, 0.4); margin-bottom: 10px; }
+/*.hd_pic { border: 1px solid #ccc; padding: 8px 12px; background: rgba(0, 0, 0, 0.4); margin-bottom: 10px; }*/
+.hd_pic { padding: 8px 12px; background: rgba(0, 0, 0, 0.3); box-shadow: 0 2px 7px rgba(255, 255, 255, 0.2); margin-bottom: 10px; }
 .hd_box { height: 390px; padding-top: 15px; overflow: hidden }
 .hd_box a:active { test: expression(target="_blank"); }
 .hd_box li { width: 208px; height: 200px; float: left; overflow: hidden; padding: 0px 15px }
