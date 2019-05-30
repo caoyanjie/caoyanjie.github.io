@@ -10,62 +10,62 @@ menu_index: 6
     <p>比如，一个人力资源管理类，在某一个时刻用户在某个类中点击了就添加一个人员，在某一个时刻用户在另一个类中点击了按钮要查看人员，这时候不管何时，人力资源类都要保持数据统一</p>
     <br />
     {% highlight c++ %}
-  #include <iostrem>
+#include <iostrem>
 
-  class A
-  {
-  public:
-      void addPerson(const std::string& name)
-      {
-          m_persons.push_back(name);
-      }
+class A
+{
+public:
+    void addPerson(const std::string& name)
+    {
+        m_persons.push_back(name);
+    }
 
-      std::vector<std::string> getPersons()
-      {
-          return m_persons;
-      }
+    std::vector<std::string> getPersons()
+    {
+        return m_persons;
+    }
 
-  private:
-      std::vector<std::string> m_persons;
-  }
+private:
+    std::vector<std::string> m_persons;
+}
 
-  class B
-  {
-  public:
-      void clickButtonToAddPerson(const std::string& name)
-      {
-          A::GetInstance().addPerson(name);
-      }
+class B
+{
+public:
+    void clickButtonToAddPerson(const std::string& name)
+    {
+        A::GetInstance().addPerson(name);
+    }
 
-  private:
-      A m_a;
-  }
+private:
+    A m_a;
+}
 
-  class C
-  {
-      public:
-      void clickButtonToShowPersons()
-      {
-          std::vector<std::string> persons = A::GetInstance().getPersons();
-          for (const auto& person : persons)
-          {
-              std::cout << person << std::endl;
-          }
-      }
-  private:
-      A m_a;
-  }
+class C
+{
+    public:
+    void clickButtonToShowPersons()
+    {
+        std::vector<std::string> persons = A::GetInstance().getPersons();
+        for (const auto& person : persons)
+        {
+            std::cout << person << std::endl;
+        }
+    }
+private:
+    A m_a;
+}
 
-  int main(void)
-  {
-      B b;
-      b.clkckButtonToAddPerson("caoyanjie");
+int main(void)
+{
+    B b;
+    b.clkckButtonToAddPerson("caoyanjie");
 
-      C c;
-      c.clickButtonToShowPersons();
+    C c;
+    c.clickButtonToShowPersons();
 
-      return 0;
-  }
+    return 0;
+}
     {% endhighlight %}
 
     <!------------------------------------------------- 分割线 ----------------------------------------------->
@@ -81,79 +81,78 @@ menu_index: 6
 
 {% highlight c++ %}
 
-  #include <iostream>
-  #include <string>
+#include <iostream>
+#include <string>
 
-  // 形状
-  struct Shape
-  {
-      virtual std::string str() = 0;
-  };
+// 形状
+struct Shape
+{
+    virtual std::string str() = 0;
+};
 
-  // 圆
-  struct Circle : Shape
-  {
-      // 重载基类虚函数
-      std::string str() override
-      {
-          return std::string("圆的半径为：") + std::to_string(m_radius);
-      }
+// 圆
+struct Circle : Shape
+{
+    // 重载基类虚函数
+    std::string str() override
+    {
+        return std::string("圆的半径为：") + std::to_string(m_radius);
+    }
 
-  private:
-      float m_radius = 10.0f;
-  };
+private:
+    float m_radius = 10.0f;
+};
 
-  // 形状颜色
-  struct ColorShape : Shape
-  {
-      ColorShape(std::string color, Shape* shape)
-      {
-          m_color = color;
-          m_shape = shape;
-      }
+// 形状颜色
+struct ColorShape : Shape
+{
+    ColorShape(std::string color, Shape* shape)
+    {
+        m_color = color;
+        m_shape = shape;
+    }
 
-      // 重载基类虚函数
-      std::string str() override
-      {
-          return m_shape->str() + std::string(" 颜色为：") + m_color;
-      }
+    // 重载基类虚函数
+    std::string str() override
+    {
+        return m_shape->str() + std::string(" 颜色为：") + m_color;
+    }
 
-  private:
-      std::string    m_color;
-      Shape*         m_shape;
-  };
+private:
+    std::string    m_color;
+    Shape*         m_shape;
+};
 
-  int main()
-  {
-      Circle c;
-      ColorShape cc("红色", &c);
-      std::cout << cc.str() << std::endl;   // 结果为：
-  }
-
+int main()
+{
+    Circle c;
+    ColorShape cc("红色", &c);
+    std::cout << cc.str() << std::endl;   // 结果为：
+}
 {% endhighlight %}
 
     <p>2. Python版</p>
 
 {% highlight python %}
-  # 加粗
-  def makebold(fn):
-      def wrapped():
-          return "<b>" + fn() + "</b>"
-      return wrapped
+# 加粗
+def makebold(fn):
+    def wrapped():
+        return "<b>" + fn() + "</b>"
+    return wrapped
 
-  # 加斜
-  def makeitalic(fn):
-      def wrapped():
-          return "<i>" + fn() + "</i>"
-      return wrapped
+# 加斜
+def makeitalic(fn):
+    def wrapped():
+        return "<i>" + fn() + "</i>"
+    return wrapped
 
-  # 加斜再加粗
-  @makebold
-  @makeitalic
-  def hello():
-      return "hello world"
+# 加斜再加粗
+@makebold
+@makeitalic
+def hello():
+    return "hello world"
 
-  print(hello())   # 结果为： <b><i>hello world</i></b>
+print(hello())   # 结果为： <b><i>hello world</i></b>
 {% endhighlight %}
 
   </div>
