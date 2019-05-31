@@ -191,6 +191,9 @@ div[class="highlight"] > pre > code[class*="language-"] {
   background:#474949;
 }
 */
+div[class="highlight"] {
+  margin: 0;
+}
 div[class="highlight"] > pre > code[class*="language-"] {
   background:#282c34;
 }
@@ -213,7 +216,6 @@ figure[class="highlight"] > pre {
   box-shadow: 0 2px 7px rgba(255, 255, 255, 0.2);
   font-size: 15px;                   /* 代码字号 */
   border: dashed 8px transparent; /*边距*/
-  margin: 0;
 }
 div[class="highlighter-rouge"] > pre[class="highlight"] > code{
   background:#282c34;
