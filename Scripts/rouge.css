@@ -191,14 +191,16 @@ div[class="highlight"] > pre > code[class*="language-"] {
   background:#474949;
 }
 */
-div[class="highlight"] {
-  margin: 0;
-}
+
 div[class="highlight"] > pre > code[class*="language-"] {
   background:#282c34;
 }
 div[class="highlight"] > pre {
   background:#282c34;
+}
+
+figure[class="highlight"] {
+  margin: 0;
 }
 figure[class="highlight"] > pre > code[class*="language-"] {
   text-align:left;
