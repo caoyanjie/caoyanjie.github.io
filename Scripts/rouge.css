@@ -215,7 +215,7 @@ figure[class="highlight"] > pre {
   /*background:rgba(40, 44, 52, 0.9);*/  /* 代码块背景半透明 */
   /*border-radius: 4px;*/
   background:rgba(0, 0, 0, 0.3);  /* 代码块背景半透明 */
-  box-shadow: 0 2px 7px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 7px rgba(255, 255, 255, 0.2);
   font-size: 15px;                   /* 代码字号 */
   border: dashed 8px transparent; /*边距*/
 }
