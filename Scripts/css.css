@@ -113,7 +113,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 .shadow_box { 
   background-color: rgba(0, 0, 0, 0); 
   width: 100%; 
-  padding: 10px; 
+  padding: 10px 8px; 
   box-shadow: 
     0 10px 10px -7px rgba(255, 255, 255, 0.3) inset,
     0 -10px 10px -7px rgba(255, 255, 255, 0.3) inset;
