@@ -130,7 +130,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
   cursor: default;
 
   margin: 32px 0 16px 0;
-  padding: 8px 10;
+  padding: 8px 4px;
   display: inline-block;
   text-align: center;
   font-size: 12px;
