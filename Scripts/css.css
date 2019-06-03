@@ -110,7 +110,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 
 /**************** article **************/
 .article_content { font-size: 16px; }
-.shadow_box { 
+.shadow_box {
   background-color: rgba(0, 0, 0, 0); 
   padding: 10px 8px; 
   box-shadow: 
@@ -128,7 +128,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
   border-radius: 4px;
   cursor: default;
 
-  margin: 32px 0 16px 0;
+  margin: 4px 0 4px 0;
   padding: 4px 8px;
   display: inline-block;
   text-align: center;
