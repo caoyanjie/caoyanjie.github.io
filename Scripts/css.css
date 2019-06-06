@@ -159,6 +159,10 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 .code { color: #fff; }
 .code p { color: #fff; font-size: 14px; text-indent: 3em; }
 
+/**************** movie ***************/
+.movie { width: 50%; float: left; }
+.clear { clear: both; }
+
 /*广告位CSS样式*/
 #ad1_box { padding: 10px; background: #fff; margin-top: 10px }
 #ad2_box { height: 80px; padding-top: 10px; overflow: hidden }
