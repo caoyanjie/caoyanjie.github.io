@@ -4,13 +4,12 @@ menu_index: 8
 ---
 
 <div class="box">
-  <div class="code">
-    <div class="tag">【单例模式】</div>
-    <div class="shadow_box">
-      <pre>单例模式是在程序运行的整个生命周期，该类只有一个实例，这样可以确保任何的引用处得到的数据都是一致的。
+  <div class="tag">【单例模式】</div>
+  <div class="shadow_box">
+    <pre>单例模式是在程序运行的整个生命周期，该类只有一个实例，这样可以确保任何的引用处得到的数据都是一致的。
 比如，一个人力资源管理类，在某一个时刻用户在某个类中点击了就添加一个人员，在某一个时刻用户在另一个类中点击了按钮要查看人员，这时候不管何时，人力资源类都要保持数据统一</pre>
-    </div><br>
-    {% highlight c++ %}
+  </div><br>
+  {% highlight c++ %}
 #include <iostrem>
 
 class A
@@ -67,10 +66,10 @@ int main(void)
 
     return 0;
 }
-    {% endhighlight %}
+  {% endhighlight %}
 
-    <div class="tag">【装饰器模式】</div>
-    <div class="shadow_box">1. C++版</div>
+  <div class="tag">【装饰器模式】</div>
+  <div class="shadow_box">1. C++版</div>
 {% highlight c++ %}
 #include <iostream>
 #include <string>
@@ -122,7 +121,7 @@ int main()
 }
 {% endhighlight %}
 
-    <div class="shadow_box">2. Python版</div>
+  <div class="shadow_box">2. Python版</div>
 {% highlight python %}
 # 加粗
 def makebold(fn):
@@ -145,5 +144,4 @@ def hello():
 print(hello())   # 结果为： <b><i>hello world</i></b>
 {% endhighlight %}
 
-  </div>
 </div>
