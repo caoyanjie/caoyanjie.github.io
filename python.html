@@ -10,6 +10,8 @@ menu_index: 3
   <div class="tag">asyncio</div>
   <div class="tag">async</div>
   <div class="tag">await</div>
+  <div class="tag">asyncio.create_task()</div>
+  <div class="tag">asyncio.gather()</div>
 
   <div class="shadow_box">
     <pre>协程的并发优于多线程的并发是：协程有极高的执行效率，不需要考虑线程间同步、死锁等问题</pre>
@@ -76,13 +78,21 @@ async def coroutine_task2():
     for i in chars:
         print(i)
         await asyncio.sleep(2)
-
+'''
 task1 = asyncio.create_task(coroutine_task1())
 task2 = asyncio.create_task(coroutine_task2())
 
 start = time.time()
 await task1
 await task2
+end = time.time()
+print(f'运行完毕，耗时: {end-start}')
+'''
+start = time.time()
+await asyncio.gather(
+    coroutine_task1(),
+    coroutine_task2(),
+)
 end = time.time()
 print(f'运行完毕，耗时: {end-start}')
   {% endhighlight %}
@@ -109,5 +119,5 @@ h
 i
 9
 j
-运行完毕，耗时: 20.007157802581787</pre>
+运行完毕，耗时: 20.0049045085907</pre>
   </div>
