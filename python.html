@@ -2,3 +2,62 @@
 layout: default
 menu_index: 3
 ---
+
+<div class="box">
+  <div class="tag">【Python协程】</div><br>
+  <div class="tag">标签： </div>
+  <div class="tag">coroutine</div>
+  <div class="tag">asyncio</div>
+  <div class="tag">async</div>
+  <div class="tag">await</div>
+
+  <div class="shadow_box">
+    <pre>协程的并发优于多线程的并发是：协程有极高的运行效率，不需要考虑线程间同步、死锁等问题</pre>
+  </div>
+
+  <div class="shadow_box">1.普通函数</div>
+  {% highlight python %}
+import time
+
+def task1():
+    for i in range(10):
+        print(i)
+        time.sleep(2)
+
+def task2():
+    chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+    for i in chars:
+        print(i)
+        time.sleep(2)
+
+start = time.time()
+task1()
+task2()
+end = time.time()
+print(f'运行完毕，耗时: {end-start}')
+  {% endhighlight %}
+
+  <div class="shadow_box">2.协程并发</div>
+  {% highlight python %}
+import asyncio
+
+async def coroutine_task1():
+    for i in range(10):
+        print(i)
+        await asyncio.sleep(2)
+
+async def coroutine_task2():
+    chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+    for i in chars:
+        print(i)
+        await asyncio.sleep(2)
+
+task1 = asyncio.create_task(coroutine_task1())
+task2 = asyncio.create_task(coroutine_task2())
+
+start = time.time()
+await task1
+await task2
+end = time.time()
+print(f'运行完毕，耗时: {end-start}')
+  {% endhighlight %}
