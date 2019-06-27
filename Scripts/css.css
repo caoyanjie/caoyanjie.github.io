@@ -126,7 +126,19 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
   float: left;
   box-sizing: boder-box;
   font-size: 12pt;
+
+    margin: 0 0 2em 0;
+    box-sizing: boder-box;
+
+      box-sizing: boder-box;
+
+        height: 300px
+        box-sizing: boder-box;
 }
+.hh {
+  height: 300px;
+}
+
 /***************** article title ********************/
 .tag {
   position: relative;
