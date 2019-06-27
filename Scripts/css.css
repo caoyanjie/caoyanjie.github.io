@@ -160,7 +160,11 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 .code p { color: #fff; font-size: 14px; text-indent: 3em; }
 
 /**************** movie ***************/
-.movie { width: 50%; float: left; }
+.movie { 
+    width: 50%; 
+    float: left;
+    box-sizing: border-box;
+}
 .clear { clear: both; }
 
 /*广告位CSS样式*/
