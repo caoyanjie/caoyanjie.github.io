@@ -136,6 +136,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 }
 .test3 {
   height: 300px;
+  width: 300px;
   box-sizing: border-box;
 }
 
