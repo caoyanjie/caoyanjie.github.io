@@ -124,19 +124,19 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
   width: 50%;
   padding: 0 0 0 2em;
   float: left;
-  box-sizing: boder-box;
+  box-sizing: border-box;
   font-size: 12pt;     
 }
 .test2 {
   margin: 0 0 2em 0;
-    box-sizing: boder-box;
+    box-sizing: border-box;
 }
 .test2 a {
-  box-sizing: boder-box;
+  box-sizing: border-box;
 }
 .test3 {
-  height: 300px
-        box-sizing: boder-box;
+  height: 300px;
+  box-sizing: border-box;
 }
 
 /***************** article title ********************/
