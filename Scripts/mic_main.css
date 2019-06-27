@@ -132,7 +132,7 @@
 		}
 */
 /* Type */
-
+/*
 	html {
 		font-size: 16pt;
 	}
@@ -203,7 +203,6 @@
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
-		/*text-transform: uppercase;*/
 		margin: 0 0 1rem 0;
 	}
 
@@ -336,7 +335,7 @@
 	hr {
 		border-bottom-color: #eeeeee;
 	}
-
+*/
 /* Section/Article */
 
 	section.special, article.special {
