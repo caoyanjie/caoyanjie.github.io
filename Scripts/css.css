@@ -40,7 +40,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 #top_bg { left: 0; right: 0; top: 0; position: fixed; z-index: 100; }
 #logo_bg { background-color: rgba(34, 34, 34, 0.9); }
 #menu_bg { background-color: rgba(129, 23, 9, 0.9); }
-.box { width: 990px; margin: 0px auto; }
+.box { width: 1080px; margin: 0px auto; }
 #logo_box { height: 70px; overflow: hidden; padding: 8px; z-index: 1000; }
 #logo_img { height: 75px; width: 220px; overflow: hidden; float: left; text-align: left }
 #slogan { height: 75px; width: 220px; float: left; color: #fff; font-size: 14px; }
