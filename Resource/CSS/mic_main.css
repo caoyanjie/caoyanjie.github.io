@@ -46,6 +46,7 @@
 	}
 	.article_date {
 		height: 100%;
+		float: right;
 		text-align: right;
 		margin-top: 10px;
 		/*padding-right: 10px;*/
