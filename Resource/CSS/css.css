@@ -5,7 +5,7 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, br, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0; padding: 0 }
 body { margin: 0px; background: #ddd; cursor: url(Images/cursor.jpg); }
 body, td, th { font-family: 宋体; font-size: 12px; color: #333; line-height: 24px }
-a:link { color: #333; text-decoration: none }
+a:link { /*color: #333;*/ text-decoration: none }
 a:visited { text-decoration: none; color: #333 }
 a:hover { text-decoration: underline; color: #e10000 }
 a:active { text-decoration: none; color: #333 }
