@@ -1,14 +1,9 @@
 	#main {
 		margin: 0 auto;		/*居中*/
-		/*width: 72rem;*/	/*固定内容宽度*/
 		overflow: hidden;	/*防止下边flow下边的东西飘上去*/
 		width: 100%;
-		/*padding: 0;*/
+		padding: 0;
 	}
-
-
-
-
 
 	.flow_block {
 		box-sizing: border-box;
