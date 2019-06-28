@@ -32,18 +32,19 @@
 
 	.article_title_date {
 		background: rgba(129, 23, 9, 0.7);
+		height: 35px;
 		float: left;
 	}
 
 	.article_title {
-		height: 35px;
 		text-align: left;
 		text-indent: 10px;
 		margin-top: 10px;
 		color: white;
+		height: 100%
 	}
 	.article_date {
-		height: 35px;
+		height: 100%;
 		text-align: right;
 		margin-top: 10px;
 		padding-right: 10px;
