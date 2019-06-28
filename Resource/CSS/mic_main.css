@@ -6,19 +6,17 @@
 	}
 
 	.flow_block {
-		box-sizing: border-box;
-		padding: 0 0 0 2em;
-		float: left;
 		width: 50%;
-		clear: none;
-		/*margin-left: 0;*/
 		margin: 0;
+		padding: 0 1em;
+		float: left;
+		clear: none;
+		box-sizing: border-box;
 	}
 
 	.flow_block_box {
 		border-radius: 6px;
-		/*margin: 0 0 2em 0;*/
-		margin: 0 auto 2em auto;
+		margin: 0 0 2em 0;
 		text-align: center;
 	}
 
