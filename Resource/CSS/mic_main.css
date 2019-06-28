@@ -43,7 +43,7 @@
 		height: 35px;
 		text-align: right;
 		margin-top: 10px;
-		margin-right: 10px;
+		padding-right: 10px;
 		color: white;
 		background: rgba(129, 23, 9, 0.7);
 	}
