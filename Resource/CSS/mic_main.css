@@ -41,7 +41,8 @@
 		float: left;
 		text-align: left;
 		text-indent: 10px;
-		margin-top: 10px;
+		/*margin-top: 10px;*/
+		margin: auto;
 		color: white;
 	}
 	.article_date {
