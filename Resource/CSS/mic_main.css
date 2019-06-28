@@ -18,7 +18,7 @@
 	}
 
 	.flow_block_box {
-		background: red;
+		background: rgba(129, 23, 9, 0.9);
 		border-radius: 6px;
 		margin: 0 0 2em 0;
 		text-align: center;
