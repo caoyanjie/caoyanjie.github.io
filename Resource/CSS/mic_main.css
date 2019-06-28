@@ -11,7 +11,8 @@
 		float: left;
 		width: 50%;
 		clear: none;
-		margin-left: 0;
+		/*margin-left: 0;*/
+		margin: 0 auto;
 	}
 
 	.flow_block_box {
