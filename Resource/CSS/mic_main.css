@@ -30,14 +30,17 @@
 		background-size:cover;
 	}
 
+	.article_title_date {
+		background: rgba(129, 23, 9, 0.7);
+		float: left;
+	}
+
 	.article_title {
 		height: 35px;
-		float: left;
 		text-align: left;
 		text-indent: 10px;
 		margin-top: 10px;
 		color: white;
-		background: rgba(129, 23, 9, 0.7);
 	}
 	.article_date {
 		height: 35px;
@@ -45,5 +48,4 @@
 		margin-top: 10px;
 		padding-right: 10px;
 		color: white;
-		background: rgba(129, 23, 9, 0.7);
 	}
