@@ -8,7 +8,7 @@
 	.flow_block {
 		width: 50%;
 		margin: 0;
-		padding: 0 1em;
+		padding: 1em;
 		float: left;
 		clear: none;
 		box-sizing: border-box;
