@@ -37,19 +37,16 @@
 	}
 
 	.article_title {
-		height: 100%;
 		float: left;
 		text-align: left;
 		text-indent: 10px;
-		line-height: 100%;
-		/*margin-top: 10px;*/
+		line-height: 40px;
 		color: white;
 	}
 	.article_date {
-		height: 100%;
 		float: right;
 		text-align: right;
-		/*margin-top: 10px;*/
 		padding-right: 10px;
+		line-height: 40px;
 		color: white;
 	}
