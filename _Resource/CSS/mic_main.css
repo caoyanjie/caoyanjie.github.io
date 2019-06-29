@@ -1,4 +1,4 @@
-	#main {
+	.flow_block_main {
 		margin: 0 auto;		/*居中*/
 		overflow: hidden;	/*防止下边flow下边的东西飘上去*/
 		width: 100%;
