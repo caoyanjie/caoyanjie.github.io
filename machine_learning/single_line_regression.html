@@ -19,15 +19,19 @@ menu_index: 6
 我们知道可以用 y = kx + b 来表示一条直线，带入以上数值，解出 k=1, b=1, 即 y = x + 1
 把 x = 5 带入直线，解得 y = 6，就成功预测了 5 的标签为 6</pre>
   </div>
-
   <div>
     <img src="/Resource/Images/machine_learning/single_line_regression_1.png" width="100%" />
   </div>
+
   <div class="shadow_box">
     <pre>那么问题来了，现实生活中的真实值大多时候不会这么完美的落到一条直线上，
-比如：我们的值是这样的(1, 2) (2 2) (3 5) 那怎么办呢？我们就找一个能尽可能多的靠近所有点的直线，使误差达到最小
+比如：我们的值是这样的(1, 2) (2, 2.8) (3, 4.2) 那怎么办呢？我们就找一个能尽可能多的靠近所有点的直线，使误差达到最小
 我们怎么找到这样一条直线呢 我们首先还是假设 y = kx + b</pre>
   </div>
+  <div>
+    <img src="/Resource/Images/machine_learning/single_line_regression_2.png" width="100%" />
+  </div>
+
   <div class="shadow_box">
     <pre>这里引出一个概念 损失函数 损失函数就是
 我们定义损失函数h(θ) = 
