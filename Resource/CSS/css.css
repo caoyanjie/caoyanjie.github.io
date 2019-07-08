@@ -120,6 +120,9 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
   font-size: 14px;
   margin: 14px 0 0 0;
 }
+.plt_img_bg {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
 /***************** article title ********************/
 .tag {
