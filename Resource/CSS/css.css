@@ -28,7 +28,7 @@ a.hongzi_a:hover { text-decoration: none; color: #000; font-weight: bold }
 pre { white-space: pre-wrap; word-wrap: break-word; }
 /***************网站首页CSS样式************/
 #home_page_img_box { margin-top: 50px; }
-#home_page_img_box img { width: 400px; }
+#home_page_img_box img { width: 350px; }
 
 /*************** title **************/
 #top_bg { left: 0; right: 0; top: 0; position: fixed; z-index: 100; }
