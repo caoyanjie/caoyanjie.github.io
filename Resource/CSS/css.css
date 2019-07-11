@@ -163,7 +163,6 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 .clear { clear: both; }
 
 /***************内页CSS样式************/
-.mian_left2 { width: 730px; padding-top: 10px; float: left; overflow: hidden }
 .mian_right2 { width: 250px; padding-top: 10px; float: right }
 .channels_box { padding: 8px 10px 0px 10px; height: 240px; overflow: hidden }
 .channels_left { width: 265px; height: 230px; padding-top: 8px; overflow: hidden; float: left }
@@ -179,10 +178,6 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 .nav_box_mc { height: 24px; width: 100px; background: #eae9e8; float: left; margin-left: 1px; padding-left: 10px; margin-top: 1px; overflow: hidden }
 .nav_box_mc span { color: #b91600; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
 /*分页*/
-#pages { margin: 15px auto; text-align: center; clear: both; padding-top: 5px; height: 21px; }
-#pages a { padding: 3px 6px 2px; margin: 3px; background: #2b2a28; border: 1 solid #1b1b1b; text-align: center; color: #fff; }
-#pages a.now { background: #2b2a28; color: #fff; border: 1 solid #1b1b1b; }
-#pages a:hover, #pages a.now:hover { background: #811709; border: 1 solid #1b1b1b; color: #ffff00; }
 .product_txt_1 img { max-width: 700px; width:expression(this.width > 700 && this.width > this.height ? 700 : true);
 overflow: hidden; }
 /*按钮样式*/
