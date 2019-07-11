@@ -9,11 +9,7 @@ a:link { /*color: #333;*/ text-decoration: none }
 a:visited { text-decoration: none; /*color: #333*/ }
 a:hover { text-decoration: underline; color: #e10000 }
 a:active { text-decoration: none; color: #333 }
-img, a img { 
-border: none; 
-margin: 0; 
-padding: 0; 
-}
+img, a img { border: none; margin: 0; padding: 0; }
 ul { list-style: none; margin: 0; padding: 0 }
 ul li { vertical-align: bottom }
 .clear { clear: both; line-height: 0px; height: 0px; font-size: 0px }
@@ -33,10 +29,6 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 /***************网站首页CSS样式************/
 
 /*************** title **************/
-/*#top_bg { background: url(../Images/bg.gif) repeat-x top #ddd; left: 0; right: 0; top: 0; position: fixed; z-index: 100; }*/
-/*#body_bg { top: 0; width: 100vw; height: 100vh; position: fixed; z-index: -1; background-color: rgba(67, 51, 157, 0.3); }*/
-/*#body_bg { top: 0; width: 100vw; height: 100vh; position: fixed; z-index: -1; background-color: rgba(0, 0, 0, 0.3); }*/
-/*#body_bg { top: 0; width: 100vw; height: 100vh; position: fixed; z-index: -1; background-color: rgba(44, 14, 197, 0.25); }*/
 #top_bg { left: 0; right: 0; top: 0; position: fixed; z-index: 100; }
 #logo_bg { background-color: rgba(34, 34, 34, 0.9); }
 #menu_bg { background-color: rgba(129, 23, 9, 0.9); }
@@ -170,12 +162,6 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 }
 .clear { clear: both; }
 
-/*广告位CSS样式*/
-#ad1_box { padding: 10px; background: #fff; margin-top: 10px }
-#ad2_box { height: 80px; padding-top: 10px; overflow: hidden }
-#ad3_box { height: 85px; overflow: hidden; padding-bottom: 10px }
-#ad4_box { height: 90px; overflow: hidden; padding-bottom: 10px }
-#ad5_box { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; background: #f8f8f8; height: 250px; overflow: hidden }
 /***************内页CSS样式************/
 .mian_left2 { width: 730px; padding-top: 10px; float: left; overflow: hidden }
 .mian_right2 { width: 250px; padding-top: 10px; float: right }
