@@ -1,5 +1,6 @@
 body,button,input { font-family:tahoma, helvetica, arial; }
-body { background-color: rgb(39, 60, 105); background-image: url("../Images/body_bg.jpg"); background-repeat: no-repeat; background-attachment: fixed; }
+/*body { background-color: rgb(39, 60, 105); background-image: url("../Images/body_bg.jpg"); background-repeat: no-repeat; background-attachment: fixed; }*/
+body { background-color: rgb(32, 48, 84); background-image: url("../Images/body_bg.jpg"); background-repeat: no-repeat; background-attachment: fixed; }
 a{ color:#8cab4e; }
 a:hover{ color:#365000; }
 
