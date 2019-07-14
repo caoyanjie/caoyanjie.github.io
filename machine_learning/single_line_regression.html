@@ -32,7 +32,11 @@ menu_index: 6
   </div>
 
   <div class="shadow_box">
-    <pre>我们先从最简单的情况开始，假设三个样本点为(1, 1) (2, 1.8) (3., 3.2)如图六，假设函数 y = kx，在机器学习中我们经常这么表示假设函数：
+    <pre>我们先从最简单的情况开始，假设三个样本点为(1, 1) (2, 1.8) (3., 3.2)如图六：
+<div class="plt_img_bg">
+    <img src="/Resource/Images/machine_learning/single_line_regression_3.png" width="100%" />
+</div>
+假设函数 y = kx，在机器学习中我们经常这么表示假设函数：
 <img src="/Resource/Images/machine_learning/hypothesis1.png" height="20px" />
 这里引出一个概念“损失函数”，损失函数就是每个样本点到我们的直线的距离的总和。我们容易看出，当损失函数最小时，即每个样本点到我们的直线的距离(如图七中的箭头长度)的和最小时就是我们要找的拟合的最好的直线，即图八中绿色的直线。
 我们定义损失函数: 
@@ -45,7 +49,7 @@ menu_index: 6
 化简，得：
 <img src="/Resource/Images/machine_learning/cost_function1_3.png" height="25px" />
 我们画出此损失函数的图像为：
-<img src="/Resource/Images/machine_learning/single_line_regression_3.png" width="100%" />
+<img src="/Resource/Images/machine_learning/single_line_regression_4.png" width="100%" />
 我们发现，损失函数其实是一个开口向上的抛物线，我们知道抛物线的顶点是其最小值，即图中的红点。
 红点即为其导数为0的点，损失函数的导数为：
 <img>
