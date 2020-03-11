@@ -110,7 +110,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
   box-shadow: 
     0 10px 10px -7px rgba(255, 255, 255, 0.3) inset,
     0 -10px 10px -7px rgba(255, 255, 255, 0.3) inset;
-  color: #fff;
+  color: rgb(8, 196, 251);
   font-size: 14px;
   margin: 14px 0 0 0;
 }
