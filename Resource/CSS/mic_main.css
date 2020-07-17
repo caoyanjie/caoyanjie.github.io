@@ -62,11 +62,11 @@
 }
 
 /* scrapy */
-.scrapy_table_box .scrapy_table { 
+.scrapy_table { 
     border-left: 1px solid #dee2e6; 
     border-bottom: 1px solid #dee2e6; 
 }
-.scrapy_table_box .scrapy_table td { 
+.scrapy_table td { 
     border-right: 1px solid #dee2e6; 
     border-top: 1px solid #dee2e6; 
     background: rgba(0, 0, 0, 0.3); 
@@ -79,4 +79,9 @@
 }
 .table_header { 
     text-align: center;
+}
+
+/* 公共样式 */
+.dark_bg {
+	background: rgba(0, 0, 0, 0.3);
 }
