@@ -1,0 +1,77 @@
+---
+layout: default
+menu_index: 4
+---
+
+<div class="box">
+    <div class="tag">【scrapy】</div><br>
+    <div class="tag">标签： </div>
+    <div class="tag">爬虫框架</div>
+    <div class="tag">结构化爬取</div>
+  
+    <div class="shadow_box">
+        <pre>前边介绍 Rqeusts 库已经能应对大部分爬虫工作，但是它是基于页面及的爬虫库，而 Scrapy 是一个重量级的爬虫框架，它提供了一整套工具：包含对页面的爬取，爬取规则的制定，数据的提取，入库等。
+我们介绍一下它的使用流程。Requests 和 Scrapy 比较如下：</pre>
+    </div>
+
+    <!-- Requests 和 Scrapy 比较表格 -->
+    <div class="scrapy_table_box">
+        <table class="scrapy_table" cellspacing="0" cellpadding="0">
+            <tr class="table_header">
+                <td>Requests</td>
+                <td>Scrapy</td>
+            </tr>
+            <tr>
+                <td>页面及爬虫</td>
+                <td>网站及爬虫</td>
+            </tr>
+            <tr>
+                <td>功能库</td>
+                <td>框架</td>
+            </tr>
+            <tr>
+                <td>并发性考虑不足，性能较差</td>
+                <td>并发性好，性能较高</td>
+            </tr>
+            <tr>
+                <td>重点在于页面下载</td>
+                <td>重点在于爬虫结构</td>
+            </tr>
+            <tr>
+                <td>定制灵活</td>
+                <td>一般定制灵活，深度定制困难</td>
+            </tr>
+            <tr>
+                <td>上手十分简单</td>
+                <td>入门少难</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Scrapy 架构 -->
+    <div class="shadow_box">Scrapy 架构：</div>
+    <div>
+        <img src="/Resource/Images/spider/scrapy.jpg" />
+    </div>
+
+    <!-- Scrapy 运行流程 -->
+    <div class="shadow_box">
+        <pre>Scrapy 运行流程：
+1.引擎从调度器中取出一个链接(URL)用于接下来的抓取
+2.引擎把URL封装成一个请求(Request)传给下载器
+3.下载器把资源下载下来，并封装成应答包(Response)
+4.爬虫解析Response
+5.解析出实体（Item）,则交给实体管道进行进一步的处理
+6.解析出的是链接（URL）,则把URL交给调度器等待抓取
+        </pre>
+    </div>
+
+    <!-- Scrapy 使用流程 -->
+    <div class="shadow_box">Scrapy 使用流程：</div>
+    {% highlight shell %}
+scrapy startproject <project_name>
+cd <project_name>
+scrapy genspider <spider_name> <domain>
+scrapy crawl <spider_name>
+    {% endhighlight %}
+

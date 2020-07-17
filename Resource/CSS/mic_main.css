@@ -1,62 +1,82 @@
-	.flow_block_main {
-		margin: 0 auto;		/*居中*/
-		overflow: hidden;	/*防止下边flow下边的东西飘上去*/
-		width: 100%;
-		padding: 0;
-	}
+.flow_block_main {
+	margin: 0 auto;		/*居中*/
+	overflow: hidden;	/*防止下边flow下边的东西飘上去*/
+	width: 100%;
+	padding: 0;
+}
 
-	.flow_block {
-		width: 50%;
-		margin: 0;
-		padding: 1em;
-		float: left;
-		clear: none;
-		box-sizing: border-box;
-	}
+.flow_block {
+	width: 50%;
+	margin: 0;
+	padding: 1em;
+	float: left;
+	clear: none;
+	box-sizing: border-box;
+}
 
-	.flow_block_box {
-		border-radius: 6px;
-		margin: 0 0 2em 0;
-		text-align: center;
-	}
+.flow_block_box {
+	border-radius: 6px;
+	margin: 0 0 2em 0;
+	text-align: center;
+}
 
-	.div_img{
-		position: relative;
-		width: 100%;
-		height:300px; 
-		/*display: table-cell;*/
-		vertical-align: middle;
-		text-align: center;
+.div_img{
+	position: relative;
+	width: 100%;
+	height:300px; 
+	/*display: table-cell;*/
+	vertical-align: middle;
+	text-align: center;
 
-		background-position: center;
-		background-repeat:no-repeat; 
-		background-size:cover;
-		background-color: rgba(0, 0, 0, 0.3);
-	}
+	background-position: center;
+	background-repeat:no-repeat; 
+	background-size:cover;
+	background-color: rgba(0, 0, 0, 0.3);
+}
 
-	.div_img img {
-		width: 100%;
-		height: 100%;
-		color: white;
-	}
+.div_img img {
+	width: 100%;
+	height: 100%;
+	color: white;
+}
 
-	.article_title_date {
-		background: rgba(129, 23, 9, 0.7);
-		width: 100%;
-		height: 40px;
-	}
+.article_title_date {
+	background: rgba(129, 23, 9, 0.7);
+	width: 100%;
+	height: 40px;
+}
 
-	.article_title {
-		float: left;
-		text-align: left;
-		text-indent: 10px;
-		line-height: 40px;
-		color: white;
-	}
-	.article_date {
-		float: right;
-		text-align: right;
-		padding-right: 10px;
-		line-height: 40px;
-		color: white;
-	}
+.article_title {
+	float: left;
+	text-align: left;
+	text-indent: 10px;
+	line-height: 40px;
+	color: white;
+}
+.article_date {
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 40px;
+	color: white;
+}
+
+/* scrapy */
+scrapy_table_box scrapy_table { 
+    border-left: 1px solid #dee2e6; 
+    border-bottom: 1px solid #dee2e6; 
+}
+scrapy_table_box scrapy_table td { 
+    border-right: 1px solid #dee2e6; 
+    border-top: 1px solid #dee2e6; 
+    background: rgba(0, 0, 0, 0.3); 
+    color: rgb(8, 196, 251); 
+    font-size: 14px; 
+    padding-left: 10px; 
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}
+.table_header { 
+    text-align: center;
+}
