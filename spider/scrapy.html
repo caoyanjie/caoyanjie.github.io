@@ -57,12 +57,16 @@ menu_index: 4
     <!-- Scrapy 运行流程 -->
     <div class="shadow_box">Scrapy 运行流程：</div>
     {% highlight shell %}
-1.引擎从调度器中取出一个链接(URL)用于接下来的抓取
-2.引擎把URL封装成一个请求(Request)传给下载器
-3.下载器把资源下载下来，并封装成应答包(Response)
-4.爬虫解析Response
-5.解析出实体（Item）,则交给实体管道进行进一步的处理
-6.解析出的是链接（URL）,则把URL交给调度器等待抓取
+1.引擎向 spiders 要链接（url）
+2.引擎将要爬取的链接（url）给调度器
+3.调度器将链接（url）生成请求对象（Request）放入到指定的队列中
+4.引擎从队列中取出一个请求（Request）交给下载器处理
+5.下载器发送请求（Request）获取互联网数据
+6.下载器将数据（Response）返回给引擎
+7.引擎将数据（Response）交给spiders
+8.spiders 通过 xpath 等解析该数据（Response）得到实体（Item）或链接（url）
+9.spiders 将解析后实体（Item）或链接（url）回给引擎
+10.引擎判断数据（如果是实体（Item）交给管道处理，如果是链接（url）交给调度器
     {% endhighlight %}
 
     <!-- Scrapy 使用流程 -->
