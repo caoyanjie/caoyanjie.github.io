@@ -10,11 +10,11 @@ menu_index: 4
     <div class="tag">结构化爬取</div>
   
     <div class="shadow_box">
-        <pre>前边介绍 Rqeusts 库已经能应对大部分爬虫工作，但是它是基于页面及的爬虫库，而 Scrapy 是一个重量级的爬虫框架，它提供了一整套工具：包含对页面的爬取，爬取规则的制定，数据的提取，入库等。
-我们介绍一下它的使用流程。Requests 和 Scrapy 比较如下：</pre>
+        <pre>前边介绍 Rqeusts 库已经能应对大部分爬虫工作，但是它是基于页面及的爬虫库，而 Scrapy 是一个重量级的爬虫框架，它提供了一整套工具：包含对页面的爬取，爬取规则的制定，数据的提取，入库等。</pre>
     </div>
 
     <!-- Requests 和 Scrapy 比较表格 -->
+    <div class="shadow_box">Requests 和 Scrapy 比较如下：</div>
     <div class="scrapy_table_box">
         <table class="scrapy_table" cellspacing="0" cellpadding="0">
             <tr class="table_header">
@@ -55,16 +55,15 @@ menu_index: 4
     </div>
 
     <!-- Scrapy 运行流程 -->
-    <div class="shadow_box">
-        <pre>Scrapy 运行流程：
+    <div class="shadow_box">Scrapy 运行流程：</div>
+    {% highlight shell %}
 1.引擎从调度器中取出一个链接(URL)用于接下来的抓取
 2.引擎把URL封装成一个请求(Request)传给下载器
 3.下载器把资源下载下来，并封装成应答包(Response)
 4.爬虫解析Response
 5.解析出实体（Item）,则交给实体管道进行进一步的处理
 6.解析出的是链接（URL）,则把URL交给调度器等待抓取
-        </pre>
-    </div>
+    {% endhighlight %}
 
     <!-- Scrapy 使用流程 -->
     <div class="shadow_box">Scrapy 使用流程：</div>
