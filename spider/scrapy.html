@@ -78,4 +78,22 @@ scrapy genspider <spider_name> <domain>
 scrapy crawl <spider_name>
     {% endhighlight %}
 
+    <!-- 爬虫的编写 -->
+    <div class="shadow_box">
+        <pre>爬虫的编写： 
+当运行了上面命令 scrapy genspider <spider_name> <domain> 后，会在目录 <project_name>-><project_name>-><spiders> 下生成 <spider_name.py>，
+这就是需要编写的爬虫文件，命令已经用模板生成了它的默认代码，假如命令为：scrapy genspider my_spider scrapyd.cn，则生成的代码如下：</pre>
+    </div>
+    {% highlight shell %}
+import scrapy
+
+class MySpiderSpider(scrapy.Spider):
+    name = 'my_spider'
+    allowed_domains = ['scrapyd.cn']
+    start_urls = ['http://scrapyd.cn/']
+    
+    def parse(self, response):
+        pass
+    {% endhighlight %}
+
 </div>
