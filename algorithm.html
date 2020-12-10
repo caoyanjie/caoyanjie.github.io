@@ -67,20 +67,58 @@ menu_index: 9
     </div>
 
     <div class="shadow_box">
-        <pre>至此，第一趟比较完，数字“9”就像一个气泡一样一步步浮出了水面，从一堆数中脱颖而出，它是最大的数，已经放到了最右侧的位置，它已经放到了正确的位置，下边就不需要再处理它了。</pre>
+        <pre>至此，第一趟比较完，数字“9”就像一个气泡一样一步步浮出了水面，从一堆数中脱颖而出，它是最大的数，已经放到了最右侧的位置，它已经放到了正确的位置，下边就不需要再处理它了。第二趟需要把第二大的数放到右数第二个位置上，后面每一趟需要把剩余数中最大的数排到剩余位置的最右侧......</pre>
     </div>
     <div class="plt_img_bg">
         <img src="/Resource/Images/algorithm/sort_line_7.png" width="100%" />
     </div>
 
     <div class="shadow_box">
-        <pre>第二趟需要把第二大的数放到右数第二个位置上，后面每一趟需要把剩余数中最大的数排到剩余位置的最右侧，总的图解如下：</pre>
+        <pre>第一趟的完整图解：</pre>
     </div>
     <div class="plt_img_bg">
         <img src="/Resource/Images/algorithm/sort_line_8.png" width="100%" />
     </div>
+
+    <div class="shadow_box">
+        <pre>第二趟完整图解：</pre>
+    </div>
+    <div class="plt_img_bg">
+        <img src="/Resource/Images/algorithm/sort_line_9.png" width="100%" />
+    </div>
     
-    <div class="shadow_box">Python代码：</div>
+    <div class="shadow_box">
+        <pre>第三趟完整图解：</pre>
+    </div>
+    <div class="plt_img_bg">
+        <img src="/Resource/Images/algorithm/sort_line_10.png" width="100%" />
+    </div>
+    
+    <div class="shadow_box">
+        <pre>第四趟完整图解：</pre>
+    </div>
+    <div class="plt_img_bg">
+        <img src="/Resource/Images/algorithm/sort_line_11.png" width="100%" />
+    </div>
+    
+    <div class="shadow_box">
+        <pre>第五趟完整图解：</pre>
+    </div>
+    <div class="plt_img_bg">
+        <img src="/Resource/Images/algorithm/sort_line_12.png" width="100%" />
+    </div>
+
+    <div class="shadow_box">
+        <pre>第六趟完整图解：</pre>
+    </div>
+    <div class="plt_img_bg">
+        <img src="/Resource/Images/algorithm/sort_line_13.png" width="100%" />
+    </div>
+    
+    <div class="shadow_box">
+        <pre>剩下最后一个数，就不需要处理了，它自然就排到了正确的位置。
+完整 Python 代码：</pre>
+    </div>
     {% highlight python %}
 # 冒泡排序
 def bubble_sort(nums):
