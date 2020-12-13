@@ -39,7 +39,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 #logo_img { height: 75px; width: 220px; overflow: hidden; float: left; text-align: left }
 #slogan { height: 75px; width: 220px; float: left; color: #fff; font-size: 14px; }
 #searche_box { height: 28px; width: 275px; float: right; overflow: hidden; padding-top: 25px }
-#input_blur { height: 28px; line-height: 28px; color: #666; padding: 2px 5px; width: 240px; background: url(../Images/input_bg.gif) repeat-x; overflow: hidden }
+#input_blur { height: 28px; line-height: 28px; color: #666; padding: 2px 5px; width: 240px; background: url(../Images/blog/input_bg.gif) repeat-x; overflow: hidden }
 .button_style { width: 34px; height: 28px; line-height: 28px; overflow: hidden }
 
 /************** 菜单 **************/
@@ -57,7 +57,7 @@ pre { white-space: pre-wrap; word-wrap: break-word; }
 .content_left { width: 264px; border: 1px solid #ccc; padding: 8px 12px; background: #f8f8f8; float: left }
 .content_right { width: 404px; border: 1px solid #ccc; padding: 8px 12px; background: #f8f8f8; float: right }
 .more { font-size: 12px; float: right; }
-.home_nav { height: 258px; background: url(../Images/nav_bg2.gif); padding: 0px 5px; overflow: hidden; line-height: 24px }  /*###########字体阴影############*/
+.home_nav { height: 258px; background: url(../Images/blog/nav_bg2.gif); padding: 0px 5px; overflow: hidden; line-height: 24px }  /*###########字体阴影############*/
 .news_show1 { padding-top: 10px; height: 89px; overflow: hidden }
 .news_imgbox { height: 81px; width: 106px; padding: 4px; background: #d0cfcd; float: left; margin-left: 12px; _margin: 0px 6px }
 .news_list { height: 149px; font-size: 14px; color: #ff0000; padding-top: 10px; overflow: hidden }
