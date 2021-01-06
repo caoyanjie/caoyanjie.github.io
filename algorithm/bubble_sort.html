@@ -134,13 +134,13 @@ def bubble_sort(nums):
 // 冒泡排序
 void bubble_sort(std::vector<int> &nums)
 {
-    for (int i = nums.size()-1; i > 0; i--)                 // 总共需要的趟数
+    for (int i = nums.size() - 1; i > 0; i--)              // 总共需要的趟数
     {
-        for (int j = 0; j < i; j++)                         // 从左到右，从第一个数开始两两比较
+        for (int j = 0; j < i; j++)                        // 从左到右，从第一个数开始两两比较
         {
-            if (nums[i] > nums[i+1])                        // 如果左边值大于右边值
+            if (nums[i] > nums[i+1])                       // 如果左边值大于右边值
             {
-                std::swap(nums[j], nums[j+1])               // 交换两个数的位置
+                std::swap(nums[j], nums[j+1])              // 交换两个数的位置
             }
         }
     }
@@ -154,11 +154,11 @@ void bubble_sort(std::vector<int> &nums)
 // 冒泡排序
 void bubble_sort(int arr[], int num)
 {
-    for (int i = num-1; i > 0; i--)                         // 总共需要的趟数
+    for (int i = num-1; i > 0; i--)                       // 总共需要的趟数
     {
-        for (int j = 0; j < i; j++)                         // 从左到右，从第一个数开始两两比较
+        for (int j = 0; j < i; j++)                       // 从左到右，从第一个数开始两两比较
         {
-            if (nums[i] > nums[i+1])                        // 如果左边值大于右边值
+            if (nums[i] > nums[i+1])                      // 如果左边值大于右边值
             {
                 // 交换两个数的位置
                 int tmp = nums[j];
@@ -179,13 +179,13 @@ void bubble_sort(int arr[], int num)
 # 优化的冒泡排序
 def bubble_sort_better(nums):
     for steps in range(len(nums)-1, 0, -1):                 # 总共需要的趟数
-        swap = False
+        swap = False                                        # 设置标志
         for i in range(steps):                              # 从左到右，从第一个数开始两两比较
             if nums[i] > nums[i+1]:                         # 如果左边值大于右边值
                 nums[i], nums[i+1] = nums[i+1], nums[i]     # 交换两个数的位置
-                swap = True
-        if not swap:
-            return
+                swap = True                                 # 有数据交换
+        if not swap:                                        # 如果一趟下来没有发生数据交换
+            return                                          # 提前结束排序
 {% endhighlight %}
 
 </div>
