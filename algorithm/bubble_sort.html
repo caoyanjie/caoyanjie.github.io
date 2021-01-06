@@ -127,4 +127,65 @@ def bubble_sort(nums):
                 nums[i], nums[i+1] = nums[i+1], nums[i]     # 交换两个数的位置
 {% endhighlight %}
 
+    <div class="shadow_box">
+        <pre>完整 C++ 代码：</pre>
+    </div>
+    {% highlight c++ %}
+// 冒泡排序
+void bubble_sort(std::vector<int> &nums)
+{
+    for (int i = nums.size()-1; i > 0; i--)                 // 总共需要的趟数
+    {
+        for (int j = 0; j < i; j++)                         // 从左到右，从第一个数开始两两比较
+        {
+            if (nums[i] > nums[i+1])                        // 如果左边值大于右边值
+            {
+                std::swap(nums[j], nums[j+1])               // 交换两个数的位置
+            }
+        }
+    }
+}
+{% endhighlight %}
+
+    <div class="shadow_box">
+        <pre>完整 C 代码：</pre>
+    </div>
+    {% highlight c %}
+// 冒泡排序
+void bubble_sort(int arr[], int num)
+{
+    for (int i = num-1; i > 0; i--)                         // 总共需要的趟数
+    {
+        for (int j = 0; j < i; j++)                         // 从左到右，从第一个数开始两两比较
+        {
+            if (nums[i] > nums[i+1])                        // 如果左边值大于右边值
+            {
+                // 交换两个数的位置
+                int tmp = nums[j];
+                nums[j] = nums[j+1]
+                nums[j+1] = tmp;
+            }
+        }
+    }
+}
+{% endhighlight %}
+
+    <div class="shadow_box">
+        <pre>【冒泡排序的优化】
+你可能已经发现，其实到第四趟结束时所有数全已排好，第五躺、第六躺就是在浪费时间，我们有没有办法在发现所有数都排好时提前结束排序呢？答案是可以的，只需要设置一个标志，判断某一趟是否有数据交换，如果一趟下来没有任何数据交换就说明所有数已排好，就可以结束排序。
+完整 Python 代码：</pre>
+    </div>
+    {% highlight python %}
+# 优化的冒泡排序
+def bubble_sort_better(nums):
+    for steps in range(len(nums)-1, 0, -1):                 # 总共需要的趟数
+        swap = False
+        for i in range(steps):                              # 从左到右，从第一个数开始两两比较
+            if nums[i] > nums[i+1]:                         # 如果左边值大于右边值
+                nums[i], nums[i+1] = nums[i+1], nums[i]     # 交换两个数的位置
+                swap = True
+        if not swap:
+            return
+{% endhighlight %}
+
 </div>
